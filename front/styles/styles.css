@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+ 
+#titleHeader{
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+header{ 
+    display: flex;
+    justify-content: flex-start;
+}
+#contenedorTitle{
+    text-align:left;
+    padding: 10px;
+}
+.link{
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+#seccionMisPeliculas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    color: #000814;
+    padding: 10px 20px;
+}
+#misPeliculas {
+    display: flex;
+    justify-content: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+#peliculasFavoritas{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#divMisPeliculasFavoritas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    color: #000814;
+    padding: 10px 20px;
+}
+#misPeliculasFavoritas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fredoka", sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 10px;
+        align-items: center
+}
+#div1, #div2, #div3{
+        text-align: justify;
+        font-size: 15px;
+}
