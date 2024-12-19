@@ -3,57 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <title>CINEMA</title>
   </head>
-<body>
-  <header>
-        
-      <h1 id="titleHeader">CINEMA M2</h1> 
-      <nav>
-        <ul id="barraNavegacion">
-            <li><a href="./index.html" class="link">Home</a></li>
-            <li><a href="./como funcionamos.html" class="link">Como Funciona</a></li>
-            <li><a href="./nuestrahistoria.html" class="link">Nuestra Historia</a></li>
-            <li><a href="./comienza.html" class="link">Comienza</a></li>
-        </ul>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="titleHeader" href="./index.html"> CINEMA M2 </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul id="barraNavegacion">
+            <li>
+              <a href="./index.html" class="link">Home</a>
+            </li>
+            <li>
+              <a href="./como funcionamos.html" class="link">Como Funciona</a>
+            </li>
+            <li>
+              <a href="./nuestrahistoria.html" class="link">Nuestra Historia</a>
+            </li>
+            <li>
+              <a href="./comienza.html" class="link">Comienza</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </header>
-    <main> 
+    </header>
+    <main>
+      <section id="seccionComofuncionamos">
+        <div id="divComoFuncionamos">          
+          <h2 id="comoFuncionamos">Como Funcionamos</h2>
+          <p id="pComoFuncionamos">
+            1.	Recomienda: Comparte una película que te haya marcado, con una breve descripción o tu reseña personal.
+            2.	Descubre: Explora las recomendaciones de otros usuarios y encuentra nuevas historias para disfrutar.
+            3.	Conecta: Interactúa con otros cinéfilos, comparte opiniones y amplía tu universo cinematográfico.
 
-        <section id="seccionComoFuncionamos">
-          <div>          
-            <h2>Como Funcionamos</h2>
-            <p>
-              1.	Recomienda: Comparte una película que te haya marcado, con una breve descripción o tu reseña personal.
-              2.	Descubre: Explora las recomendaciones de otros usuarios y encuentra nuevas historias para disfrutar.
-              3.	Conecta: Interactúa con otros cinéfilos, comparte opiniones y amplía tu universo cinematográfico.
+        Por qué unirte a nuestra comunidad
+            
+            •	Sin límites de géneros: Desde el suspenso más oscuro hasta las comedias más hilarantes, aquí hay espacio para todo tipo de cine.
+            •	Recomendaciones auténticas: Olvídate de los algoritmos; las recomendaciones vienen directamente de personas que aman el cine tanto como tú.
+            •	Fácil de usar: Busca, guarda y comparte tus películas favoritas con solo unos clics.
 
-          Por qué unirte a nuestra comunidad
-              
-              •	Sin límites de géneros: Desde el suspenso más oscuro hasta las comedias más hilarantes, aquí hay espacio para todo tipo de cine.
-              •	Recomendaciones auténticas: Olvídate de los algoritmos; las recomendaciones vienen directamente de personas que aman el cine tanto como tú.
-              •	Fácil de usar: Busca, guarda y comparte tus películas favoritas con solo unos clics.
+            ¡Empieza ahora! Regístrate, comparte tu primera recomendación y forma parte de una comunidad donde cada película cuenta una historia.
 
-              ¡Empieza ahora! Regístrate, comparte tu primera recomendación y forma parte de una comunidad donde cada película cuenta una historia.
+          </p>
+          </div>
 
-            </p>
-            </div>
-  
 
-        </section>
+      </section>
 
-    
-
+      <section id="seccionHistoriaDelProyecto">
+        <div>    
     </main>
     <footer class="footer">
-
-      <a href="https://www.linkedin.com/in/paula-andrea-santacruz-8352b0192/" target="_blank">Contactame</a>
-
+      <a
+        href="https://www.linkedin.com/in/paula-andrea-santacruz-8352b0192/"
+        target="_blank"
+        >Contactame</a
+      >
     </footer>
 
-    <script type ="module" src="./scripts/tempData.js"></script>
-    <script type ="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/tempData.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

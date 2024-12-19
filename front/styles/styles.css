@@ -1,112 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-body{
-    background-image: url('../assets/1\ \(2\).jpg'); 
-    background-size: cover;  
-    background-position: center;
-    
- }
-#titleHeader{
-    font-family: "Fredoka", sans-serif;
-    font-weight: bold;
-    font-size: 80px;
-    color: #ffffff;
-    text-shadow: 
-    -3px -3px 0 #000,  
-    3px -3px 0 #000,  
-    -3px 3px 0 #000,  
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+body {
+  background-image: url("../assets/1\ \(2\).jpg");
+  background-size: cover;
+  background-position: center;
+}
+#titleHeader {
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
     3px 3px 0 #000;
 }
-header{ 
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 20px 20px;
-    margin-top: 20px;
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  margin-top: 20px;
 }
-#barraNavegacion{
-    display: flex;
-    justify-content: center;
-    padding: 30px 20px 20px 20px;
-    list-style: none;
+#barraNavegacion {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 20px 20px;
+  list-style: none;
 }
-.link{
-    font-family: "Fredoka", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 15px;
-    text-decoration: none;
-    color: #ffffff;
-    text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,  
-    -2px 2px 0 #000,  
+.link {
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;
 }
-.link:hover {
-    border-bottom: 2px solid #DEAC80;
-    padding-bottom: 3px; 
-    transition: border-bottom 0.3s ease
-}
- 
-#seccionMisPeliculas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    font-family: "Fredoka", sans-serif;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.505);
-    height: 200px;
-    width: 1300px;
-    padding: 20px;    
-    margin: 20px 50px 20px 70px;   
+#seccionMisPeliculas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredoka", sans-serif;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.505);
+  height: 200px;
+  width: 1300px;
+  padding: 20px;
+  margin: 20px 50px 20px 70px;
 }
 #divMisPeliculas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
-#pMisPeliculas{
-    font-size: 30px;
-    margin: 0; 
-    padding-top: 10px; 
-    text-align: center;
-    text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,  
-    -2px 2px 0 #000,  
-    2px 2px 0 #000;
-}                                   
-#seccionMisPeliculasFavoritas{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-#misPeliculasFavoritas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    font-family: "Fredoka", sans-serif;
-    font-size: 20px;
-    padding: 10px 20px;
-}
-#misPeliculasFavoritas{
-    font-family: "Fredoka", sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 60px;
-    text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,  
-    -2px 2px 0 #000,  
+#pMisPeliculas {
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;
 }
-#div1, #div2, #div3{
-    text-align: justify;
-    font-size: 15px;
+#articleMisPeliculasFavoritas {
+  display: flex;
+  flex-direction: row;
+}
+#seccionMisPeliculasFavoritas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#misPeliculasFavoritas {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  color: #ffffff;
+}
+#comoFuncionamos {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  color: #ffffff;
+}
+#seccionComoFuncionamos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredoka", sans-serif;
+  color: #ffffff;
+}
+#pComoFuncionamos {
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.505);
+  height: 500px;
+  width: 1300px;
+  padding: 20px;
+  margin: 20px 50px 20px 70px;
+  color: #ffffff;
+}
+#divComoFuncionamos {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+}
+#nuestraHistoria {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  color: #ffffff;
+}
+#pNuestraHistoria {
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.505);
+  height: 500px;
+  width: 1300px;
+  padding: 20px;
+  margin: 20px 50px 20px 70px;
+  color: #ffffff;
+}
+#comienza {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  color: #ffffff;
 }
