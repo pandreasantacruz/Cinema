@@ -17,20 +17,20 @@ const axios = require("axios");
     console.log(error)
   }
  */
-axios
+/*axios
   .get("https://students-api.up.railway.app/movies")
+  console
   .then((info) => {
     doneData(info.data); // Maneja datos exitosos.
   })
   .catch(failData); // Maneja errores.
-/*
-  const getMoviesData = async () => { con async await
-    try{
-    const {data} = awaitaxios.get("url")
-    doneData (data) }
-    catch (error){
-    failData()
-    }
-    }
-    getMoviesData()
-  */
+*/
+const getMoviesData = async () => {
+  try {
+    const response = await axios.get("http://localhost:3000/movies");
+    doneData(response.data.data); //como responde el servidor
+  } catch (error) {
+    failData();
+  }
+};
+getMoviesData();
