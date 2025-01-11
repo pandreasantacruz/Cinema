@@ -4,6 +4,7 @@ const mapear = (movie) => {
   const ano = document.createElement("p");
   const direc = document.createElement("p");
   const duracion = document.createElement("p");
+  const genero = document.createElement("p");
   const puntuacion = document.createElement("p");
   const imagen = document.createElement("img");
 
@@ -21,10 +22,13 @@ const mapear = (movie) => {
   direc.classList.add("card-text");
   ano.innerText = movie.year;
   ano.classList.add("card-text");
+  genero.innerHTML = movie.genre;
+  genero.classList.add("card-text");
   titulo.innerText = movie.title;
   titulo.classList.add("card-title");
 
   div.appendChild(titulo);
+  div.appendChild(genero);
   div.appendChild(ano);
   div.appendChild(direc);
   div.appendChild(duracion);

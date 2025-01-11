@@ -2,6 +2,16 @@ const { doneData } = require("./doneData");
 const { failData } = require("./failData");
 const axios = require("axios");
 
+const getMoviesData = async () => {
+  try {
+    const response = await axios.get("http://localhost:3000/movies");
+    doneData(response.data.data); //como responde el servidor
+  } catch (error) {
+    failData();
+  }
+};
+getMoviesData();
+
 /*$.get("https://students-api.up.railway.app/movies")
   .done(doneData)
   .fail(failData);
@@ -25,12 +35,3 @@ const axios = require("axios");
   })
   .catch(failData); // Maneja errores.
 */
-const getMoviesData = async () => {
-  try {
-    const response = await axios.get("http://localhost:3000/movies");
-    doneData(response.data.data); //como responde el servidor
-  } catch (error) {
-    failData();
-  }
-};
-getMoviesData();

@@ -11,6 +11,8 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>CINEMA</title>
   </head>
   <body>
@@ -43,22 +45,22 @@
           <form id="formulario">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="movieTitle">Nombre Pelicula</label>
-                <input type="text" class="form-control" id="movieTitle" placeholder="Nombre Pelicula">
+                <label for="movietitle">Nombre Pelicula</label>
+                <input type="text" class="form-control" id="movietitle" placeholder="Nombre Pelicula">
               </div>
               <div class="form-group col-md-6">
-                <label for="movieYear">Año</label>
-                <input type="number" class="form-control" id="movieYear" placeholder="Año estreno ">
+                <label for="movieyear">Año</label>
+                <input type="number" class="form-control" id="movieyear" placeholder="Año estreno ">
               </div>
             </div>
             <div class="form-group">
-              <label for="movieDirector">Director</label>
-              <input type="text" class="form-control" id="movieDirector" placeholder="Director">
+              <label for="moviedirector">Director</label>
+              <input type="text" class="form-control" id="moviedirector" placeholder="Director">
             </div>
             <div class="form-row">
               <div class="form-group col-md-4">
-                <label for="movieDuration">Duracion</label>
-                <select id="movieDuration" class="form-control">
+                <label for="movieduration">Duracion</label>
+                <select id="movieduration" class="form-control">
                   <option selected>Duracion</option>
                   <option>Menos de una hora</option>
                   <option>1 h</option>
@@ -77,8 +79,8 @@
                 </select>
               </div>
               <div class="form-group col-md-4">
-                <label for="movirGenre">Genero</label>
-                <select id="movirGenre" class="form-control">
+                <label for="moviegenre">Genero</label>
+                <select id="moviegenre" class="form-control">
                   <option selected>Genero</option>
                   <option>Acción</option>
                   <option>Aventura</option>
@@ -118,10 +120,11 @@
             
             </div>
             <div class="form-group">
-              <label for="moviePoster">Poster</label>
-              <input type="url" class="form-control" id="moviePoster" placeholder="Poster">
+              <label for="movieposter">Poster</label>
+              <input type="url" class="form-control" id="movieposter" placeholder="Poster">
             </div>
-            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="submit" class="btn btn-primary" id="botonguardar">Guardar</button>
+            <button type="button" class="btn btn-primary"id="botonlimpiar">Limpiar</button>
           </form>
       </section>
     </main>
@@ -145,7 +148,7 @@
       <a></a>
     </footer>
 
-    <script type="module" src="./public/bundle.js"></script>
+    <script type="module" src="./public/comienza.bundle.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"

@@ -1,8 +1,10 @@
 module.exports = {
-  entry: "./scripts/index.js", // por donde empieza a escanear el proyecto
-
+  entry: {
+    index: "./scripts/index.js",
+    comienza: "./scripts/comienza.js", // por donde empieza a escanear el proyecto
+  },
   output: {
     path: __dirname + "/public",
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
   }, // donde se guarda el resultado
 };
