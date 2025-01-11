@@ -38,23 +38,111 @@
     <main>
       <section id="seccionFormulario">
         <div id="container2">
-          <h2 id="comienza">Titulo seccion 3</h2>
+          <h2 id="comienza">Comienza por llenar tus peliculas favoritas y guardalas con nosotros!!</h2>
 
-          <h3>Subtitulo 3</h3>
-          <ol>
-            <li class="itemsencuesta">Cosa 1</li>
-            <li class="itemsencuesta">Cosa 2</li>
-            <li class="itemsencuesta">Cosa 3</li>
-          </ol>
-        </div>
+          <form id="formulario">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="movieTitle">Nombre Pelicula</label>
+                <input type="text" class="form-control" id="movieTitle" placeholder="Nombre Pelicula">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="movieYear">Año</label>
+                <input type="number" class="form-control" id="movieYear" placeholder="Año estreno ">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="movieDirector">Director</label>
+              <input type="text" class="form-control" id="movieDirector" placeholder="Director">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="movieDuration">Duracion</label>
+                <select id="movieDuration" class="form-control">
+                  <option selected>Duracion</option>
+                  <option>Menos de una hora</option>
+                  <option>1 h</option>
+                  <option>1 h 10 min</option>
+                  <option>1 h 20 min</option>
+                  <option>1 h 30 min</option>
+                  <option>1 h 40 min</option>
+                  <option>1 h 50 min</option>
+                  <option>2 h </option>
+                  <option>1 h 10 min</option>
+                  <option>2 h 20 min</option>
+                  <option>2 h 30 min</option>
+                  <option>2 h 40 min</option>
+                  <option>2 h 50 min</option>
+                  <option>Mas de tres horas</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="movirGenre">Genero</label>
+                <select id="movirGenre" class="form-control">
+                  <option selected>Genero</option>
+                  <option>Acción</option>
+                  <option>Aventura</option>
+                  <option>Animación</option>
+                  <option>Comedia</option>
+                  <option>Drama</option>
+                  <option>Terror</option>
+                  <option>Ciencia Ficción</option>
+                  <option>Romántica</option>
+                  <option>Fantasía</option>
+                  <option>Suspenso / Thriller</option>
+                  <option>Misterio</option>
+                  <option>Crimen</option>
+                  <option>Musical</option>
+                  <option>Documental</option>
+                  <option>Cine Experimental</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="movierate">Tu Calificacion</label>
+                <select id="movierate" class="form-control">
+                  <option selected>Tu calificacion siendo 10 lo mejor</option>
+                  <option >No pierdas tiempo</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>Lo mejor que veras</option>
+                </select>
+              </div>
+            
+            </div>
+            <div class="form-group">
+              <label for="moviePoster">Poster</label>
+              <input type="url" class="form-control" id="moviePoster" placeholder="Poster">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
       </section>
     </main>
     <footer class="footer">
-      <a
-        href="https://www.linkedin.com/in/paula-andrea-santacruz-8352b0192/"
-        target="_blank"
-        >Contactame</a
-      >
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="https://www.linkedin.com/in/paula-andrea-santacruz-8352b0192/"
+            target="_blank"
+            >Contactanos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nuestra Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Encuentra mas Peliculas</a>
+        </li>
+      </ul>
+      <a></a>
     </footer>
 
     <script type="module" src="./public/bundle.js"></script>
