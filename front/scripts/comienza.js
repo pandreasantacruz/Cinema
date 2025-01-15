@@ -3,15 +3,14 @@ const axios = require("axios");
 const saveMovie = async (movie) => {
   try {
     const response = await axios.post("http://localhost:3000/movies", movie);
-    console.log("Movie saved:", response.data);
+    console.log("Pelicula Guardada:", response.data);
   } catch (error) {
-    console.error("Error saving movie:", error);
+    console.error("Error al guardar pelicula:", error);
   }
 };
 
 document.getElementById("formulario").addEventListener("submit", (event) => {
   event.preventDefault();
-
   const movie = {
     title: document.getElementById("movietitle").value,
     year: document.getElementById("movieyear").value,
@@ -21,6 +20,8 @@ document.getElementById("formulario").addEventListener("submit", (event) => {
     rate: document.getElementById("movierate").value,
     poster: document.getElementById("movieposter").value,
   };
+  console.log("Probando peliculas", movie);
+
   saveMovie(movie);
 });
 document.getElementById("botonlimpiar").addEventListener("click", () => {

@@ -9,21 +9,32 @@ const {
   postMovieService,
 } = require("../services/movieservices.js");
 
-const getAllMoviesController = (req, res) => {
-  const movies = getAllMoviesService();
-
-  res.status(200).json({
-    message: "Get All Movies",
-    data: movies,
-  });
+const getAllMoviesController = async (req, res) => {
+  try {
+    const movies = await getAllMoviesService();
+    res.status(200).json({
+      message: "Get all movies",
+      data: movies,
+    });
+  } catch (error) {
+    res.status(404).json({
+      message: "Error servidor",
+    });
+  }
 };
-const postMovieController = (req, res) => {
-  const response = postMovieService(req.body);
+const postMovieController = async (req, res) => {
+  try {
+    const response = await postMovieService(req.body);
 
-  res.status(201).json({
-    message: "Movie Created Succesfully",
-    data: response,
-  });
+    res.status(201).json({
+      message: "Pelicula creada con exito",
+      data: response,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al salvar",
+    });
+  }
 };
 
 module.exports = {
