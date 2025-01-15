@@ -1,5 +1,3 @@
-// Son funciones, por ejemplo que se comunica con la base de datos para pedir la info de los usuarios
-//respondera con lo que se necersite y se lo manda al controlador
 // const movies = [
 //   // actrua como nuestra base de datos
 //   {
@@ -42,6 +40,7 @@ const getAllMoviesService = async () => {
     return getMovies;
   } catch (error) {
     console.error("Error get all services", error);
+    throw error;
   }
 };
 
@@ -49,10 +48,11 @@ const postMovieService = async (movie) => {
   try {
     const newMovie = new Movie(movie);
     await newMovie.save();
-    console.log("Estado del array movies:", newMovieMovie);
+    console.log("Estado del array movies:", newMovie);
     return newMovie;
   } catch (error) {
     console.error("Error al guardar pelicula:", error);
+    throw error;
   }
 };
 

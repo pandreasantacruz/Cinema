@@ -7,7 +7,6 @@ dbCon()
   .then(() => {
     console.log("Conexion a la BD exitosa");
     app.listen(3000, () => {
-      // le indica al servidor que empiece a escuchar solicitudes indica puerto
       console.log("Servidor escuchando en el puerto 3000");
     });
   })

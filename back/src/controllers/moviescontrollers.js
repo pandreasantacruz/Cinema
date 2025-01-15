@@ -1,9 +1,3 @@
-// funciones de negocio de cada ruta osea que se debe hacer
-//Para esa ruta GET/USERS vam,mos a ir a la base de datos para pedir la info de los usuarios
-//Y responder al cliente con la informacion obetenida son dos acciones diferentes
-// Estra tarea no lo hace el controlador lo hace el servicio NOACCEDEN A LA INFO DIRECTAMENTE
-// El cointrolador maneja errores tambien
-// Obtiene  la informacion necesaria atraves de req
 const {
   getAllMoviesService,
   postMovieService,
