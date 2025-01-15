@@ -23,6 +23,7 @@ document.getElementById("formulario").addEventListener("submit", (event) => {
   console.log("Probando peliculas", movie);
 
   saveMovie(movie);
+  alert("Pelicula guardada con exito. Ve a Home para verla");
 });
 document.getElementById("botonlimpiar").addEventListener("click", () => {
   document.getElementById("formulario").reset();
